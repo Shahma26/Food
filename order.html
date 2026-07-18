@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FOODEAT | Order Now</title>
+
+<link rel="stylesheet" href="order.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!-- AOS animation -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+
+<section class="order" data-aos="zoom-in" data-aos-duration="3000">
+
+<div class="container">
+
+    <div class="left">
+
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900" alt="Food">
+
+        <div class="offer">
+            <h2>🔥 Today's Offer</h2>
+            <h1>20% OFF</h1>
+            <p>On orders above ₹999</p>
+        </div>
+
+    </div>
+
+    <div class="right">
+
+        <h1>🍽 Place Your Order</h1>
+
+        <form>
+
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Full Name" required>
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-phone"></i>
+                <input type="tel" placeholder="Phone Number" required>
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email">
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-bowl-food"></i>
+
+                <select>
+                    <option>Select Food</option>
+                    <option>Chicken Biriyani</option>
+                    <option>Paneer Tikka</option>
+                    <option>Butter Chicken</option>
+                    <option>Grilled Chicken</option>
+                    <option>Chocolate Brownie</option>
+                </select>
+
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-hashtag"></i>
+                <input type="number" placeholder="Quantity" min="1">
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <textarea placeholder="Delivery Address"></textarea>
+            </div>
+
+            <div class="payment">
+
+                <h3>Payment Method</h3>
+
+                <label>
+                    <input type="radio" name="pay">
+                    Cash on Delivery
+                </label>
+
+                <label>
+                    <input type="radio" name="pay">
+                    UPI
+                </label>
+
+                <label>
+                    <input type="radio" name="pay">
+                    Card
+                </label>
+
+            </div>
+
+            <button>
+                <i class="fa-solid fa-cart-shopping"></i>
+                Confirm Order
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</section>
+
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

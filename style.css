@@ -1,0 +1,881 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+header{
+    position: absolute;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:1000;
+    position:fixed;
+    top:0;
+    background:rgba(0,0,0,.65);
+    backdrop-filter:blur(15px);
+}
+
+/* LOGO */
+.logo{
+    font-size: 28px;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+}
+
+/* NAVBAR */
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:  white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+
+/* HERO SECTION */
+#home{
+    width: 100%;
+    height: 100vh;
+    background: url("pexels-pasta-1854245.jpg") no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* DARK OVERLAY */
+.row{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+/* CONTENT */
+.home-content{
+    position: relative;
+    color: white;
+    max-width: 600px;
+    z-index: 2;
+}
+
+.home-content h1{
+    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.home-content p{
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #ddd;
+}
+
+/* BUTTON */
+.home-content button{
+    padding: 14px 35px;
+    background: orange;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.home-content button:hover{
+    background: darkorange;
+    transform: scale(1.05);
+}
+
+#ctgry{
+    width: 100%;
+    min-height:100vh;
+    height:auto;
+    text-align: center;
+    padding: 100px;
+}
+
+#ctgry h1{
+    margin-bottom: 30px;
+    color: chocolate;
+}
+
+.row1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.col1{
+    width: 200px;
+    height: 250px;
+    background-color: beige;
+    align-items: center;
+    color: chocolate;
+}
+
+.col1 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+    .col1 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+}
+    
+}
+
+#ctgry button{
+    padding: 14px 35px;
+    margin-top: 30px;
+    background: orange;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#ctgry button:hover{
+    background: darkorange;
+    transform: scale(1.05);
+}
+
+#ctgry button a{
+    text-decoration: none;
+    font-size: large;
+    color: white;
+}
+
+#menu{
+    width: 100%;
+    height: 100vh;
+}
+
+#menu img{
+    height: 200px;
+    width: 200px;
+    margin-left: 40%;
+}
+
+.row2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.col2{
+    width: 250px;
+    height: 400px;
+    background-color: beige;
+    align-items: center;
+}
+
+.col2 h3{
+    text-align: center;
+    color: chocolate;
+    padding-top: 20px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 10px;
+    font-size: 18px;
+}
+
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 12px 10px;
+    font-size: 18px;
+}
+
+#bg{
+    background: url(https://static.vecteezy.com/system/resources/previews/027/229/122/non_2x/a-bowl-of-colorful-vegetables-with-tomatoes-onions-and-peppers-ai-generated-free-photo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+#bg p{
+    color:white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    margin-left: 20%;
+    padding-top: 20%;
+    font-size:x-large;
+}
+
+#about{
+    padding: 80px 8%;
+    background:beige;
+}
+
+.row3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.col3{
+    flex: 1;        /* Equal width (50% each) */
+}
+
+.content h1{
+    font-size: 45px;
+    color: #ff6b00;
+    margin-bottom: 20px;
+}
+
+.content h2{
+    margin-top: 25px;
+    color:  #ff6b00;
+}
+
+.content p{
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    width: 100%;
+    max-width: 650px;   /* Bigger image */
+    height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+    .row3{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content p{
+        text-align: center;
+    }
+
+    .image img{
+        max-width: 450px;
+    }
+}
+
+/* Contact Section */
+#contact {
+    padding: 80px 10%;
+    background: beige;
+}
+
+.contact-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info h2 {
+    font-size: 2.2rem;
+    color: chocolate;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.info-box h3 {
+    margin-top: 20px;
+    color: #222;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: chocolate;
+}
+
+.contact-form button {
+    background: chocolate;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #e85a24;
+}
+
+/* Map */
+.map-container {
+    margin-top: 40px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    border-radius: 10px;
+}
+
+
+/* Responsive style.css */
+/* Paste your existing CSS above this line if desired */
+
+/* Global improvements */
+html{scroll-behavior:smooth;}
+img{max-width:100%;display:block;}
+section{overflow:hidden;}
+
+/* ========== Responsive ========== */
+
+@media (max-width:1200px){
+header{padding:20px 30px;}
+.row2{flex-wrap:wrap;gap:20px;}
+.col3 img{width:500px;max-width:100%;}
+#menu{height:auto;padding-bottom:40px;}
+}
+
+@media (max-width:992px){
+header{flex-direction:column;gap:15px;padding:20px;}
+nav ul{flex-wrap:wrap;justify-content:center;gap:18px;}
+.home-content h1{font-size:55px;}
+#ctgry,#menu,#about{height:auto;padding:70px 20px;}
+.row1,.row2{flex-wrap:wrap;gap:20px;}
+.row3{flex-direction:column;}
+.col3 img{width:100%;max-width:500px;}
+#menu img{margin:auto;}
+#bg p{margin:0;padding:35% 10%;text-align:center;}
+}
+
+@media (max-width:768px){
+header{padding:15px;}
+.logo{font-size:24px;}
+nav ul{gap:10px;}
+nav ul li a{font-size:14px;}
+#home{padding:0 20px;}
+.home-content h1{font-size:42px;}
+.home-content p{font-size:15px;}
+.row1,.row2,.row3{flex-direction:column;}
+.col1,.col2{width:90%;max-width:340px;height:auto;padding-bottom:20px;}
+.col3 img{width:100%;}
+.col3 p{margin:20px 0;font-size:16px;}
+.item,.items{font-size:15px;}
+.contact-container{flex-direction:column;}
+.contact-info,.contact-form{width:100%;}
+#bg p{font-size:22px;padding:45% 8%;}
+}
+
+@media (max-width:480px){
+.home-content h1{font-size:34px;}
+.home-content p{font-size:14px;}
+.home-content button{width:100%;}
+nav ul li a{font-size:13px;}
+.col1,.col2{width:100%;}
+#menu img{width:150px;height:150px;}
+.item,.items{font-size:14px;}
+#bg p{font-size:18px;}
+.contact-info h2{font-size:30px;}
+}
+
+
+
+/* Featured Dishes */
+
+#featured{
+    padding:80px 20%;
+    background:beige;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    color:#d35400;
+}
+
+.section-subtitle{
+    text-align:center;
+    margin:15px auto 50px;
+    color:#666;
+    max-width:600px;
+}
+
+.featured-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.dish-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.dish-card:hover{
+    transform:translateY(-10px);
+}
+
+.dish-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.dish-content{
+    padding:20px;
+}
+
+.dish-content h3{
+    margin-bottom:10px;
+    color:#222;
+}
+
+.rating{
+    color:#f39c12;
+    margin-bottom:12px;
+    font-size:18px;
+}
+
+.dish-content p{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.price-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.price{
+    font-size:22px;
+    font-weight:bold;
+    color:#d35400;
+}
+
+.price-row button{
+    padding:10px 20px;
+    border:none;
+    background:#d35400;
+    color:#fff;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.price-row button:hover{
+    background:#a84300;
+}
+
+
+
+/* Our Chefs */
+
+#chefs{
+    padding:80px 8%;
+    background:beige;
+}
+
+.section-title{
+    text-align:center;
+    font-size:42px;
+    color:#d35400;
+    margin-bottom:10px;
+}
+
+.section-subtitle{
+    text-align:center;
+    color:#666;
+    max-width:650px;
+    margin:0 auto 50px;
+    line-height:1.7;
+}
+
+.chef-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.chef-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.chef-card:hover{
+    transform:translateY(-12px);
+}
+
+.chef-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.chef-content{
+    padding:25px;
+    text-align:center;
+}
+
+.chef-content h2{
+    color:#222;
+    margin-bottom:8px;
+}
+
+.chef-content h4{
+    color:#d35400;
+    margin-bottom:15px;
+}
+
+.chef-content p{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.chef-icons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.chef-icons i{
+    width:45px;
+    height:45px;
+    line-height:45px;
+    border-radius:50%;
+    background:#d35400;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.chef-icons i:hover{
+    background:#222;
+    transform:rotate(360deg);
+}
+
+@media(max-width:768px){
+    .section-title{
+        font-size:34px;
+    }
+
+    .chef-card img{
+        height:280px;
+    }
+}
+
+
+/* Customer Reviews */
+
+#reviews{
+    padding:80px 8%;
+    background:beige;
+}
+
+.review-title{
+    text-align:center;
+    font-size:42px;
+    color:#d35400;
+    margin-bottom:10px;
+}
+
+.review-subtitle{
+    text-align:center;
+    color:#666;
+    max-width:650px;
+    margin:0 auto 50px;
+    line-height:1.8;
+}
+
+.review-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.review-card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 12px 25px rgba(0,0,0,.12);
+    transition:.4s;
+    position:relative;
+}
+
+.review-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 35px rgba(0,0,0,.18);
+}
+
+.review-card img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #d35400;
+    margin-bottom:15px;
+    margin-left: 160px;
+}
+
+.review-card h2{
+    margin-bottom:10px;
+    color:#222;
+}
+
+.stars{
+    font-size:22px;
+    color:#f39c12;
+    margin-bottom:15px;
+}
+
+.review-card p{
+    color:#666;
+    line-height:1.8;
+    font-style:italic;
+}
+
+/* Quote Icon */
+.review-card::before{
+    content:"❝";
+    position:absolute;
+    top:15px;
+    left:20px;
+    font-size:50px;
+    color:#f4b183;
+    opacity:0.3;
+}
+
+@media(max-width:768px){
+
+.review-title{
+    font-size:34px;
+}
+.review-card img{
+    margin-left: 80px;
+}
+
+}
+
+
+/* ================== FOOTER ================== */
+
+#footer{
+    background:#f7ecd8;
+    /* border-top:4px solid #d35400; */
+    margin-top:80px;
+}
+
+.footer-top{
+    width:90%;
+    margin:auto;
+    padding:70px 0;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:50px;
+}
+
+.footer-box h2{
+    font-family:"Bebas Neue",sans-serif;
+    font-size:38px;
+    color:#d35400;
+    letter-spacing:2px;
+}
+
+.footer-box h3{
+    color:chocolate;
+    margin-bottom:20px;
+}
+
+.footer-box h4{
+    color:chocolate;
+    margin-top:18px;
+}
+
+.footer-box p{
+    color:#555;
+    line-height:1.8;
+}
+
+.footer-box a{
+    display:block;
+    text-decoration:none;
+    color:#555;
+    margin:12px 0;
+    transition:.3s;
+}
+
+.footer-box a:hover{
+    color:#d35400;
+    padding-left:8px;
+}
+
+.footer-social{
+    margin-top:20px;
+}
+
+.footer-social a{
+    width:45px;
+    height:45px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    background:white;
+    color:#d35400;
+    border-radius:50%;
+    margin-right:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.footer-social a:hover{
+    background:#d35400;
+    color:white;
+    transform:translateY(-8px);
+}
+
+.newsletter{
+    display:flex;
+    margin-top:20px;
+}
+
+.newsletter input{
+    flex:1;
+    padding:14px;
+    border:2px solid #e5c8a2;
+    background:white;
+    border-radius:30px 0 0 30px;
+    outline:none;
+}
+
+.newsletter button{
+    border:none;
+    background:#d35400;
+    color:white;
+    padding:14px 22px;
+    border-radius:0 30px 30px 0;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.newsletter button:hover{
+    background:chocolate;
+}
+
+.footer-bottom{
+    text-align:center;
+    padding:20px;
+    border-top:1px solid #e6d3ba;
+    color:#666;
+}
+
+.footer-bottom span{
+    color:#d35400;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.footer-top{
+    text-align:center;
+}
+
+.newsletter{
+    flex-direction:column;
+}
+
+.newsletter input,
+.newsletter button{
+    width:100%;
+    border-radius:30px;
+}
+
+.newsletter button{
+    margin-top:12px;
+}
+
+}
