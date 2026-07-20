@@ -456,95 +456,167 @@ nav ul li a{font-size:13px;}
 
 
 
-/* Featured Dishes */
+/* ==========================
+   Featured Dishes Section
+========================== */
 
 #featured{
-    padding:80px 20%;
-    background:beige;
+    width:100%;
+    padding:90px 8%;
+    background:#fffaf5;
+    text-align:center;
 }
 
 .section-title{
-    text-align:center;
-    font-size:40px;
-    color:#d35400;
+    font-size:2.8rem;
+    color:#ff6b00;
+    margin-bottom:10px;
+    font-weight:700;
 }
 
 .section-subtitle{
-    text-align:center;
-    margin:15px auto 50px;
+    max-width:700px;
+    margin:0 auto 50px;
     color:#666;
-    max-width:600px;
+    font-size:1.05rem;
+    line-height:1.8;
 }
+
+/* Cards Container */
 
 .featured-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:30px;
+    align-items:stretch;
 }
+
+/* Card */
 
 .dish-card{
     background:#fff;
-    border-radius:18px;
+    border-radius:20px;
     overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-    transition:.4s;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.4s ease;
+    display:flex;
+    flex-direction:column;
+    height:100%;
 }
 
 .dish-card:hover{
     transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
 }
+
+/* Image */
 
 .dish-card img{
     width:100%;
-    height:220px;
+    height:230px;
     object-fit:cover;
+    display:block;
 }
 
+/* Content */
+
 .dish-content{
-    padding:20px;
+    padding:22px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
 }
 
 .dish-content h3{
-    margin-bottom:10px;
+    font-size:1.5rem;
     color:#222;
+    margin-bottom:10px;
 }
 
 .rating{
-    color:#f39c12;
-    margin-bottom:12px;
+    color:#FFC107;
     font-size:18px;
+    margin-bottom:15px;
 }
 
 .dish-content p{
     color:#666;
-    line-height:1.6;
-    margin-bottom:20px;
+    line-height:1.7;
+    margin-bottom:25px;
+    flex:1;
 }
+
+/* Price */
 
 .price-row{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    margin-top:auto;
 }
 
 .price{
-    font-size:22px;
+    font-size:1.4rem;
+    color:#ff6b00;
     font-weight:bold;
-    color:#d35400;
 }
 
+/* Button */
+
 .price-row button{
-    padding:10px 20px;
-    border:none;
-    background:#d35400;
+    background:#ff6b00;
     color:#fff;
+    border:none;
+    padding:10px 22px;
     border-radius:30px;
     cursor:pointer;
+    font-size:15px;
     transition:.3s;
 }
 
 .price-row button:hover{
-    background:#a84300;
+    background:#222;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+    .featured-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    #featured{
+        padding:70px 20px;
+    }
+
+    .featured-container{
+        grid-template-columns:1fr;
+    }
+
+    .section-title{
+        font-size:2.2rem;
+    }
+
+    .dish-card img{
+        height:220px;
+    }
+
+    .price-row{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .price-row button{
+        width:100%;
+    }
+
 }
 
 
@@ -699,7 +771,6 @@ nav ul li a{font-size:13px;}
     object-fit:cover;
     border:4px solid #d35400;
     margin-bottom:15px;
-    margin-left: 160px;
 }
 
 .review-card h2{
